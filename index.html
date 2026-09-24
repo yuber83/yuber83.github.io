@@ -1,3 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de privacidad</title>
+    <meta name="description" content="Política de privacidad de las aplicaciones PagoVoz, Firu y TecniFlow.">
+    <style>
+        :root {
+            --fondo: #fbfaf7;
+            --superficie: #ffffff;
+            --texto: #1d2320;
+            --suave: #5b635f;
+            --linea: #e6e3dc;
+            --acento: #0b6e4f;
+            --acento-fondo: #e9f4ef;
+            --aviso-fondo: #fdf6e7;
+            --aviso-linea: #ecd9a8;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --fondo: #121513;
+                --superficie: #191d1b;
+                --texto: #e7ebe8;
+                --suave: #a2aba6;
+                --linea: #2b312e;
+                --acento: #6fd3ae;
+                --acento-fondo: #17291f;
+                --aviso-fondo: #272214;
+                --aviso-linea: #4a3f20;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: var(--fondo);
+            color: var(--texto);
+            font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 56px 20px 80px;
+        }
+
+        header {
+            margin-bottom: 40px;
+        }
+
+        .fecha {
+            margin: 0 0 12px;
+            color: var(--suave);
+            font-size: 14px;
+        }
+
+        h1 {
+            margin: 0 0 16px;
+            font-size: 34px;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        .entrada {
+            margin: 0;
+            color: var(--suave);
+            font-size: 17px;
+        }
+
+        nav {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 12px;
+            margin: 32px 0 48px;
+        }
+
+        nav a {
+            display: block;
+            padding: 16px 18px;
+            background: var(--superficie);
+            border: 1px solid var(--linea);
+            border-radius: 12px;
+            color: var(--texto);
+            text-decoration: none;
+            transition: border-color .15s;
+        }
+
+        nav a:hover {
+            border-color: var(--acento);
+        }
+
+        nav strong {
+            display: block;
+            font-size: 16px;
+        }
+
+        nav span {
+            color: var(--suave);
+            font-size: 14px;
+        }
+
+        section {
+            padding-top: 8px;
+        }
+
+        .app {
+            margin-top: 56px;
+            padding-top: 40px;
+            border-top: 1px solid var(--linea);
+        }
+
+        .etiqueta {
+            display: inline-block;
+            margin-bottom: 8px;
+            padding: 2px 10px;
+            background: var(--acento-fondo);
+            color: var(--acento);
+            border-radius: 999px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        h2 {
+            margin: 0 0 12px;
+            font-size: 26px;
+            line-height: 1.25;
+            letter-spacing: -0.01em;
+        }
+
+        h3 {
+            margin: 32px 0 8px;
+            font-size: 18px;
+        }
+
+        p,
+        ul {
+            margin: 0 0 14px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        li::marker {
+            color: var(--suave);
+        }
+
+        a {
+            color: var(--acento);
+        }
+
+        .aviso {
+            margin: 20px 0;
+            padding: 16px 18px;
+            background: var(--aviso-fondo);
+            border: 1px solid var(--aviso-linea);
+            border-radius: 12px;
+        }
+
+        .aviso p:last-child {
+            margin-bottom: 0;
+        }
+
+        .resumen {
+            margin: 20px 0 8px;
+            padding: 18px 20px;
+            background: var(--superficie);
+            border: 1px solid var(--linea);
+            border-radius: 12px;
+        }
+
+        .resumen ul {
+            margin: 0;
+        }
+
+        footer {
+            margin-top: 64px;
+            padding-top: 24px;
+            border-top: 1px solid var(--linea);
+            color: var(--suave);
+            font-size: 14px;
+        }
+
+        @media (max-width: 480px) {
+            main {
+                padding-top: 40px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 23px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+
+        <header>
+            <p class="fecha">Última actualización: 23 de septiembre de 2026</p>
+            <h1>Política de privacidad</h1>
+            <p class="entrada">
+                Esta política explica qué datos recopilan mis aplicaciones, para qué se usan y qué puedes hacer
+                con ellos. Las secciones generales valen para todas; cada aplicación tiene además su propia
+                sección.
+            </p>
+        </header>
+
+        <nav aria-label="Aplicaciones">
+            <a href="#pagovoz"><strong>PagoVoz</strong><span>Anuncio de pagos por voz</span></a>
+            <a href="#firu"><strong>Firu</strong><span>Ver sección</span></a>
+            <a href="#tecniflow"><strong>TecniFlow</strong><span>Ver sección</span></a>
+        </nav>
+
+        <section id="general">
+            <h2>Para todas las aplicaciones</h2>
+
+            <h3>Quién es responsable</h3>
+            <p>
+                Las aplicaciones PagoVoz, Firu y TecniFlow las desarrolla y publica Yuber Vasquez, desarrollador
+                independiente. Para cualquier consulta sobre privacidad, escribe a
+                <a href="mailto:yuber.vasquez@gmail.com">yuber.vasquez@gmail.com</a>.
+            </p>
+
+            <h3>Seguridad</h3>
+            <p>
+                Tomo medidas razonables para proteger la información. Ningún sistema es completamente seguro,
+                así que no puedo garantizar una seguridad absoluta de los datos transmitidos o almacenados.
+            </p>
+
+            <h3>Tus derechos</h3>
+            <p>Según la ley aplicable, puedes:</p>
+            <ul>
+                <li>Pedir acceso a los datos que tenga sobre ti.</li>
+                <li>Pedir que se corrijan o se eliminen.</li>
+                <li>Oponerte a un uso concreto de tus datos.</li>
+            </ul>
+            <p>
+                Escribe al correo de contacto y respondo en un plazo razonable. En PagoVoz casi todo queda en tu
+                propio teléfono, así que puedes borrarlo tú mismo (ver su sección).
+            </p>
+
+            <h3>Menores de edad</h3>
+            <p>
+                Las aplicaciones no están dirigidas a menores de 13 años ni recopilan a sabiendas datos de ellos.
+                PagoVoz está pensada para comerciantes mayores de 18 años.
+            </p>
+
+            <h3>Cambios a esta política</h3>
+            <p>
+                Si la política cambia, publicaré la nueva versión en esta misma página y actualizaré la fecha de
+                arriba. Si el cambio afecta cómo se tratan tus datos, lo avisaré dentro de la aplicación.
+            </p>
+        </section>
+
+        <section id="pagovoz" class="app">
+            <span class="etiqueta">Android</span>
+            <h2>PagoVoz</h2>
+            <p>
+                PagoVoz lee las notificaciones de pago que llegan a tu teléfono (Yape, Plin y bancos) y las
+                anuncia en voz alta, aunque la pantalla esté apagada. También guarda un historial para que
+                puedas cuadrar la caja.
+            </p>
+
+            <div class="resumen">
+                <ul>
+                    <li>No hay cuenta ni inicio de sesión.</li>
+                    <li>Las notificaciones y el historial se guardan solo en tu teléfono. No se envían a ningún
+                        servidor.</li>
+                    <li>La app no accede a tus cuentas bancarias ni pide contraseñas.</li>
+                    <li>La publicidad (Google AdMob) y la suscripción Premium (Google Play) sí intercambian datos con
+                        Google.</li>
+                </ul>
+            </div>
+
+            <h3>Acceso a las notificaciones</h3>
+            <p>
+                Para funcionar, PagoVoz necesita el permiso de <strong>acceso a notificaciones</strong>, que
+                concedes tú en los ajustes de Android y puedes retirar cuando quieras. Así funciona Android: con
+                ese permiso, la app recibe todas las notificaciones del teléfono, no solo las de pagos.
+            </p>
+            <p>
+                PagoVoz solo interpreta las notificaciones de una lista cerrada de aplicaciones de pago: Yape,
+                BCP, Interbank, BBVA, Scotiabank y BanBif (Plin llega a través de los bancos). Una notificación
+                de cualquier otra aplicación no se anuncia ni pasa al historial.
+            </p>
+
+            <h3>Qué se guarda en tu teléfono</h3>
+            <ul>
+                <li>
+                    <strong>Historial de movimientos:</strong> la aplicación de origen, el tipo (recibido o
+                    enviado), el monto, la moneda, el nombre de la persona tal como aparece en la notificación y
+                    la fecha y hora.
+                </li>
+                <li><strong>Ajustes:</strong> tus preferencias de voz, proveedores y montos.</li>
+                <li>
+                    <strong>Diagnóstico:</strong> si está activado, guarda el texto de las notificaciones que
+                    llegan al teléfono, de cualquier aplicación, para ajustar el reconocimiento de cada banco. Se
+                    conservan las 500 más recientes.
+                </li>
+            </ul>
+
+            <div class="aviso">
+                <p>
+                    <strong>Diagnóstico viene activado.</strong> Puedes apagarlo en <em>Ajustes › Guardar
+                        notificaciones en Diagnóstico</em> y borrar lo guardado en <em>Diagnóstico › Borrar</em>.
+                    Su contenido no sale del teléfono, salvo que tú mismo lo compartas con el botón
+                    <em>Exportar</em>.
+                </p>
+            </div>
+
+            <p>
+                Nada de esto se envía a un servidor. Para anunciar los pagos, la app usa el motor de voz del
+                propio teléfono (el de Android).
+            </p>
+
+            <h3>Publicidad</h3>
+            <p>
+                La versión gratuita muestra anuncios de <strong>Google AdMob</strong>. Para mostrarlos y medirlos,
                 el SDK de AdMob recopila y envía a Google datos como:
             </p>
             <ul>
@@ -113,4 +447,3 @@
 </body>
 
 </html>
-
